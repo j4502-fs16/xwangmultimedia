@@ -2,23 +2,22 @@ p{
   color:black;
   font-family:helvetica,Arial,sans-serif;
 }
-
-#about{
-  float:right;
-  width:60%;
-  margin-right:3%;
+#about {
+  text-align:center;
+  margin:auto;
 }
+
 
 h1{
   font-family:Georgia,"Times News Roman", serif;
-  margin-left:2%;
+
 
 }
 h2{
   font-family:Georgia,"Times News Roman", serif;
   font-size:1em;
   font-style:italic;
-  margin-left:2%;
+  text-align:center;
 }
 h3{
   color:black;
@@ -27,6 +26,7 @@ h3{
 
 body{
   background-color:black;
+  text-align:center;
 }
 
 #footer{
@@ -41,27 +41,32 @@ body{
       background-color:#ffffff;
       margin:auto;
     }
+
+.image img{
+  border:0;
+}
+
 .caption{
   color:black;
   font-family:Georgia,"Time New Roman",serif;
   font-size:0.8em;
   font-style: italic;
-  margin-left:18%;
+  margin-left:53%;
   margin-top:0;
   text-align:justify;
 }
 
-#nav {
+.nav {
   padding:0;
 }
-#nav li{
+.nav li{
   list-style-type:none;
   float:left;
   padding:0;
   width:25%;
 }
 
-#nav a:link, a:visited {
+.nav a:link, a:visited {
   display: block;
   color:black;
   background-color: #e6c300;
@@ -72,6 +77,36 @@ body{
   font-family:Helvetica, Arial, sans-serif;
 }
 
-#nav a:hover, a:active{
+.nav a:hover, a:active{
   background-color:#fff6cc;
+}
+
+#me {
+  padding:0;
+  font-family:helvetica,Arial,sans-serif;
+}
+
+#me li{
+  text-align:center;
+  list-style-type:none;
+  padding:0;
+  width:25%;
+}
+
+#me a:link, a:visited {
+  color:black;
+  font-weight:bold;
+  text-decoration: none;
+  padding:4px;
+  font-family:Helvetica, Arial, sans-serif;
+}
+
+#me a:hover, a:active{
+  background-color:#fff6cc;
+}
+#second a:link {
+    text-decoration: none;
+}
+#back a:link {
+  text-decoration:none;
 }
