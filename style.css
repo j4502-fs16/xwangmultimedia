@@ -1,27 +1,27 @@
 p{
   color:black;
-  font-family:helvetica,Arial,sans-serif;
+  font-family: 'Cardo', serif;
 }
 #about {
   text-align:center;
   margin:auto;
 }
 
-
 h1{
-  font-family:Georgia,"Times News Roman", serif;
-
-
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:3em;
+  font-weight:bold;
 }
 h2{
-  font-family:Georgia,"Times News Roman", serif;
-  font-size:1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:1.5em;
   font-style:italic;
   text-align:center;
 }
 h3{
   color:black;
   text-decoration-line: none;
+  margin-top:10%;
 }
 
 body{
@@ -34,12 +34,14 @@ body{
   font-family:Georgia,"Times New Roman",serif;
   font-size:0.8em;
   border-top:1px solid black;
+  text-align: left;
 }
 
 #container {
       width:95%;
-      background-color:#ffffff;
-      margin:auto;
+      background-color:#FFFFFF;
+      text-align:center;
+      font-family: 'Josefin Sans', sans-serif;
     }
 
 .image img{
@@ -69,12 +71,12 @@ body{
 .nav a:link, a:visited {
   display: block;
   color:black;
-  background-color: #e6c300;
+  background-color:#DAA520;
   font-weight:bold;
   text-align:center;
   text-decoration: none;
   padding:4px;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: 'Cardo', serif;
 }
 
 .nav a:hover, a:active{
@@ -83,7 +85,8 @@ body{
 
 #me {
   padding:0;
-  font-family:helvetica,Arial,sans-serif;
+  font-family: 'Cardo', serif;
+  text-align:center;
 }
 
 #me li{
@@ -95,18 +98,15 @@ body{
 
 #me a:link, a:visited {
   color:black;
-  font-weight:bold;
-  text-decoration: none;
-  padding:4px;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: 'Cardo', serif;
 }
 
 #me a:hover, a:active{
-  background-color:#fff6cc;
+  background-color:#FFD700;
 }
-#second a:link {
-    text-decoration: none;
+#second a:hover, a:active {
+  background-color:#FFD700;
 }
-#back a:link {
-  text-decoration:none;
+#back a:hover, a:active {
+  background-color:#FFD700;
 }
