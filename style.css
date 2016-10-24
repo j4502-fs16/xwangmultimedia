@@ -1,14 +1,10 @@
  p{
   color:black;
   font-family: 'Cardo', serif;
+  font-size: 1.25em;
 }
 body{
   background-color:black;
-}
-
-#about {
-  text-align:center;
-  margin:auto;
 }
 
 
@@ -16,13 +12,17 @@ h1{
   font-family: 'Josefin Sans', sans-serif;
   font-size:3em;
   font-weight:bold;
+  text-align:center;
 }
 h2{
   font-family: 'Josefin Sans', sans-serif;
   font-size:1.5em;
   font-style:italic;
   text-align:center;
+
 }
+
+
 h3{
   color:black;
   text-decoration-line: none;
@@ -39,35 +39,133 @@ h3{
 
 #container {
       width:95%;
-      background-color:#FFFFFF;
-      text-align:center;
+      background-color:white;
       font-family: 'Josefin Sans', sans-serif;
       margin:0 auto;
+      color:black;
     }
 
 
 
-.image img{
-  border:0;
+.header{
+  display:flex;
+  flex-flow:column;
+  font-weight:bold;
+  text-align:center;
 }
+
+#top, #sub, .twitter-follow-button {
+  flex: 1 100%;
+        padding: 10px;
+}
+
+@media (min-width:800px){
+
+      #top{
+        flex:3 0px;
+      }
+      #top {
+        order: 1;
+      }
+      #sub {
+        flex:1;
+      }
+
+      #sub{
+        order:2;
+      }
+      .twitter-follow-button {
+        order: 3;
+      }
+    }
+
+.wrapper{
+  display:flex;
+  flex-flow:row wrap;
+  font-weight:bold;
+  text-align:center;
+}
+.main, .caption {
+      flex:1 100%;
+      padding:10px;
+    }
+
+img{
+      width:100%;
+    }
+
+
+
+@media (min-width:800px){
+
+      .main{
+        flex:3 0px;
+      }
+      .main{
+        order:1;
+    }
+
+      .main{
+        display:flex;
+        flex-flow:row:
+      }
+
+      img {
+        width:50%
+        height:150px;
+        margin-right:10px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+#about {
+  text-align:left;
+}
+
+
+
 
   .caption{
   color:black;
   font-family:Georgia,"Time New Roman",serif;
   font-size:0.8em;
   font-style: italic;
-  margin-left:53%;
   margin-top:0;
   text-align:justify;
+
 }
 
 .nav {
+  list-style:none;
+  margin:0;
+  background:#DAA520;
   padding:0;
+  display:flex;
+  flex-flow:column;
+  justify-content:space-around;
 }
 .nav li{
-  list-style-type:none;
-  float:left;
-  width:25%;
+  text-decoration:none;
+  display:block;
+  padding:10px;
+  color: white;
+}
+
+.nav a{
+  text-decoration:none;
+  display:block;
+  padding:10px;
+  color:white;
+  text-align:center;
 }
 
 .nav a:link, a:visited {
@@ -81,18 +179,33 @@ h3{
   font-family: 'Cardo', serif;
 }
 
-.nav a:hover, a:active{
-  background-color:#fff6cc;
-}
+
+
+@media (min-width:800px){
+  .nav li{
+    flex-flow:row;
+    justify-content:center;
+  }
+  .nav a:hover, a:active{
+    background-color:gray;
+  }
+
+  .nav {
+    display:flex;
+    flex-flow:row wrap;
+    font-weight:bold;
+    text-align:center;
+  }
+
+
+
 
 #me {
   padding:0;
   font-family: 'Cardo', serif;
-  text-align:center;
 }
 
 #me li{
-  text-align:center;
   list-style-type:none;
   padding:0;
   width:25%;
