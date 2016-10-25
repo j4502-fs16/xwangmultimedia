@@ -245,13 +245,16 @@ img{
     flex-flow:row;
   }
   .twitter-timeline {
-    flex:1;
+    flex:5;
     order:2;
+    display:block;
+    justify-content:center;
+    text-align:center;
   }
   .bottom {
     display:flex;
     flex-flow:column;
-    flex:2;
+    flex:1;
     order:1;
   }
 }
