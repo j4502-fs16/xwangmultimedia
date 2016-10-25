@@ -188,37 +188,30 @@ img{
        }
      }
 
-
-
-.end {
-  display:flex;
-  flex-flow:row;
-  font-weight:bold;
-  text-align:center;
-}
-
-.twitter, .bottom{
-  flex:1 100%;
-  display:flex;
-  padding:50px;
-  justify-content:center;
-}
-
-@media (min-width:800px){
-  .twitter {
-    flex:1;
-  }
-  .bottom {
-    flex:2;
-  }
-  .bottom{
-    order:1;
-  }
-  .twitter{
-    order:2;
-  }
-}
-
+     .bottom {
+       display:flex;
+       flex-flow:row;
+       font-weight:bold;
+       text-align:center;
+       font-size: 1.75em;
+     }
+/*
+     #second, #back {
+       flex:1 100%;
+       display:flex;
+       padding:50px;
+       height:100px;
+       justify-content:center;
+     }
+     @media (min-width:800px){
+       #second {
+         flex:2;
+       }
+       #back {
+         flex:1;
+       }
+     }
+*/
 
 
 .bottom {
@@ -226,51 +219,45 @@ img{
   flex-flow:column;
   font-weight:bold;
   text-align:center;
-  font-size: 1.75em;
 }
 
-#second, #back {
-  flex:1 100%;
-  display:flex;
-  padding:50px;
-  height:100px;
-  justify-content:center;
-}
-@media (min-width:800px){
-  #second {
-    flex:2;
-  }
-  #back {
-    flex:1;
-  }
-}
 
-.twitter {
+
+
+
+
+
+.end {
   display:flex;
   flex-flow:column;
   font-weight:bold;
   text-align:center;
 }
 
-.twitter-follow-button, .twitter-timeline {
+.twitter-timeline, .bottom{
   flex:1 100%;
-  display:flex;
   padding:50px;
-  height:100px;
   justify-content:center;
 }
-@media (min-width:800px){
-   .twitter-timeline{
-    flex:3 0px;
-  }
-  .twitter-follow-button {
-   order:1;
-  }
 
-  .twitter-timeline{
-   order:2;
+@media (min-width:800px){
+  .end {
+    flex-flow:row;
   }
- }
+  .twitter-timeline {
+    flex:1;
+    order:2;
+  }
+  .bottom {
+    display:flex;
+    flex-flow:column;
+    flex:2;
+    order:1;
+  }
+}
+
+
+
 
 
 
