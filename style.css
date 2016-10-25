@@ -232,6 +232,7 @@ img{
   flex-flow:column;
   font-weight:bold;
   text-align:center;
+  margin-left:10% 10%;
 }
 
 .twitter-timeline, .bottom{
@@ -245,11 +246,11 @@ img{
     flex-flow:row;
   }
   .twitter-timeline {
-    flex:5;
+    flex:2;
     order:2;
     display:block;
     justify-content:center;
-    text-align:center;
+    padding:50px;
   }
   .bottom {
     display:flex;
