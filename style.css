@@ -237,17 +237,22 @@ img{
 
 .twitter-timeline, .bottom{
   flex:1 100%;
-  padding:50px;
   justify-content:center;
+}
+
+.twitter-timeline {
+  display:block;
+  text-align:center;
+  padding:20px;
+
 }
 
 @media (min-width:800px){
 
   .twitter-timeline {
-    flex:2;
+    flex:1;
     display:block;
     justify-content:center;
-    padding:50px;
   }
 
   .twitter-timeline {
