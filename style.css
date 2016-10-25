@@ -242,20 +242,24 @@ img{
 }
 
 @media (min-width:800px){
-  .end {
-    flex-flow:row;
-  }
+
   .twitter-timeline {
     flex:2;
-    order:2;
     display:block;
     justify-content:center;
     padding:50px;
+  }
+
+  .twitter-timeline {
+      order:2;
   }
   .bottom {
     display:flex;
     flex-flow:column;
     flex:1;
+    order:1;
+  }
+  .bottom {
     order:1;
   }
 }
