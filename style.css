@@ -188,13 +188,7 @@ img{
        }
      }
 
-     .bottom {
-       display:flex;
-       flex-flow:row;
-       font-weight:bold;
-       text-align:center;
-       font-size: 1.75em;
-     }
+
 /*
      #second, #back {
        flex:1 100%;
@@ -213,67 +207,9 @@ img{
      }
 */
 
-
-.bottom {
-  display:flex;
-  flex-flow:column;
-  font-weight:bold;
+#second, #back {
   text-align:center;
 }
-
-
-
-
-
-
-
-.end {
-  display:flex;
-  flex-flow:column;
-  font-weight:bold;
-  text-align:center;
-  margin-left:10% 10%;
-}
-
-.twitter-timeline, .bottom{
-  flex:1 100%;
-  justify-content:center;
-}
-
-.twitter-timeline {
-  display:block;
-  text-align:center;
-  padding:20px;
-
-}
-
-@media (min-width:800px){
-
-  .twitter-timeline {
-    flex:1;
-    display:block;
-    justify-content:center;
-  }
-
-  .twitter-timeline {
-      order:2;
-  }
-  .bottom {
-    display:flex;
-    flex-flow:column;
-    flex:1;
-    order:1;
-  }
-  .bottom {
-    order:1;
-  }
-}
-
-
-
-
-
-
 
 
 #about {
