@@ -1,7 +1,7 @@
  p{
   color:black;
   font-family: 'Cardo', serif;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 body{
   background-color:black;
@@ -97,29 +97,30 @@ img{
 @media (min-width:800px){
 
       .main{
-        flex:3 0px;
+        flex:1 0px;
       }
       .main{
         order:1;
     }
-
       .main{
         display:flex;
-        flex-flow:row:
+        flex-flow:row;
       }
+  }
+
 
       img {
-        width:50%
-        height:150px;
+        width: 100%;
         margin-right:10px;
       }
-    }
+
 
 
   .me{
       display:flex;
       flex-flow:row wrap;
       font-weight:bold;
+      justify-content: center;
       text-align:center;
       font-size: 2.25em;
       margin:0;
@@ -129,7 +130,7 @@ img{
    display:block;
    padding:50px;
    height:100px;
-   justify-content:center;
+   margin:0;
  }
 
  .experience {
@@ -158,11 +159,10 @@ img{
  @media (min-width:800px){
 
        .experience{
-         flex:3 ;
+         flex:1 ;
        }
        .experience {
          background:gold;
-         padding:50px;
          order: 1;
        }
        .reporter {
@@ -312,6 +312,7 @@ img{
 #second a:hover, a:active {
   background-color:#FFD700;
 }
+
 #back a:hover, a:active {
   background-color:#FFD700;
 }
