@@ -136,6 +136,8 @@ img{
  .experience {
    display:block;
    background:gold;
+   color:black;
+   text-decoration-line: none;
  }
 
  .reporter {
@@ -154,6 +156,8 @@ img{
    display: block;
    background:chocolate;
    padding:50px;
+   color:black;
+   text-decoration-line: none;
  }
 
  @media (min-width:800px){
