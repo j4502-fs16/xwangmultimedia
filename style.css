@@ -140,6 +140,11 @@ img{
    text-decoration-line: none;
  }
 
+ .experience {
+   color:black;
+   text-decoration-line: none;
+ }
+
  .reporter {
    display:block;
    background:silver;
@@ -156,6 +161,9 @@ img{
    display: block;
    background:chocolate;
    padding:50px;
+ }
+
+ .old a{
    color:black;
    text-decoration-line: none;
  }
