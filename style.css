@@ -136,13 +136,11 @@ img{
  .experience {
    display:block;
    background:gold;
-   color:black;
-   text-decoration-line: none;
  }
 
- .experience {
+ .experience a{
    color:black;
-   text-decoration-line: none;
+   text-decoration:none;
  }
 
  .reporter {
@@ -165,7 +163,7 @@ img{
 
  .old a{
    color:black;
-   text-decoration-line: none;
+   text-decoration: none;
  }
 
  @media (min-width:800px){
