@@ -59,6 +59,13 @@ h3{
   padding: 0px;
 }
 
+@media all and (max-width:599px){
+  .main2{
+    visibility: hidden;
+    display: none;
+  }
+}
+
 @media all and (min-width:600px){
   .header{
     display:flex;
@@ -119,14 +126,25 @@ img{
         display:flex;
         flex-flow:row;
       }
+      .main2 {
+        display:flex;
+        flex-flow:row;
+
+      }
+      #about2{
+        order:2;
+      }
   }
 
 
-      img {
+      .image1 {
         width: 100%;
         margin-right:10px;
       }
+      .image2 {
+        width:35%;
 
+      }
 
 
   .me{
