@@ -78,18 +78,29 @@ h3{
 nav ul li {
     display: block;
     border-top: 1px #79896d solid;
+    background-color: #DAA520;
+    text-align:center;
+    font-weight: bold;
 }
 
 nav a {
     color: #f8ecc2;
+    background-color: #DAA520;
+    text-align: center;
     display: block;
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 10px 20px;
+}
+
+.header .menu-trigger {
+  display:flex;
+  flex:row;
 }
 
 .header {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    order: 2;
     background-color: white;
     margin: 0;
     padding: 0 10px;
@@ -97,41 +108,85 @@ nav a {
 
 .menu-trigger {
     order: 1;
-    font-size: 2.75em;
-    width: 4em;
+    font-size: 5em;
+    width: 2.5em;
 }
+
+
 
 nav ul {
    display: none;
 }
 
 #top {
-    order: 2;
     font-size: 2em;
 }
-
 #sub {
-  order:3;
-  font-size:2em;
+  font-size:1em;
 }
+
+
+
 
 
 @media screen and (min-width: 700px){
 
   .menu-trigger {
       display: none;
+
   }
-  .nav {
-    display: none;
+nav {
+  list-style:none;
+  margin:0;
+  background:#DAA520;
+  padding:0;
+  display:flex;
+  flex-flow:column;
+  justify-content:space-around;
+}
+
+  nav ul li{
+    text-decoration:none;
+    display:block;
+    padding:10px;
+    color: white;
   }
 
-  .nav li {
-    border-top: none;
+  nav ul{
+    text-decoration:none;
+    display:flex;
+    flex-flow:row;
+    justify-content:space-around;
+    padding:10px;
+    color:white;
+    text-align:center;
   }
+
+  nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+}
  #top {
    order:1;
  }
- .nav {
+ nav {
    order:2;
  }
 }
@@ -359,7 +414,7 @@ img{
   text-align:center;
 }
 
-.nav a:link, a:visited {
+nav a:link, a:visited {
   display: block;
   color:black;
   background-color:#DAA520;
