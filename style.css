@@ -100,7 +100,6 @@ nav a {
 .header {
     display: flex;
     flex-flow: column;
-    order: 2;
     background-color: white;
     margin: 0;
     padding: 0 10px;
@@ -110,6 +109,8 @@ nav a {
     order: 1;
     font-size: 5em;
     width: 2.5em;
+    text-decoration: none;
+    background-color:#DAA520;
 }
 
 
@@ -120,9 +121,11 @@ nav ul {
 
 #top {
     font-size: 2em;
+    order:1;
 }
 #sub {
   font-size:1em;
+  order:2;
 }
 
 
@@ -131,58 +134,18 @@ nav ul {
 
 @media screen and (min-width: 700px){
 
-  .menu-trigger {
-      display: none;
-
-  }
-nav {
-  list-style:none;
-  margin:0;
-  background:#DAA520;
-  padding:0;
-  display:flex;
-  flex-flow:column;
-  justify-content:space-around;
-}
-
-  nav ul li{
-    text-decoration:none;
-    display:block;
-    padding:10px;
-    color: white;
-  }
 
   nav ul{
-    text-decoration:none;
-    display:flex;
-    flex-flow:row;
+    display: flex;
     justify-content:space-around;
-    padding:10px;
-    color:white;
-    text-align:center;
   }
-
-  nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        border-top: none;
-    }
-
-    .menu-trigger {
-        display: none;
-    }
-
-    header h1 {
-        order: 1;
-    }
-
-    nav {
-        order: 2;
-    }
-
+  nav ul li{border-top: none;
+  }
+  .menu-trigger {
+    display: none;
+  }
 }
+
  #top {
    order:1;
  }
@@ -197,6 +160,7 @@ nav {
       #top{
         flex:3 0px;
         flex-flow:row;
+
       }
 
       .header {
@@ -390,28 +354,32 @@ img{
 
 }
 
-.nav {
+
+
+nav {
   list-style:none;
   margin:0;
   background:#DAA520;
   padding:0;
-  display:flex;
-  flex-flow:column;
-  justify-content:space-around;
+
 }
-.nav li{
+nav li{
   text-decoration:none;
   display:block;
   padding:10px;
   color: white;
+  display:flex;
+  flex-flow:row;
+  justify-content:space-around;
+  text-align:center;
 }
 
-.nav a{
+nav a{
   text-decoration:none;
   display:block;
   padding:10px;
   color:white;
-  text-align:center;
+
 }
 
 nav a:link, a:visited {
