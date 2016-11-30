@@ -1,3 +1,4 @@
+
  p{
   color:black;
   font-family: 'Cardo', serif;
@@ -60,21 +61,6 @@ h3{
 }
 
 
-
-.map-wrapper {
-	overflow:hidden;
-	padding-bottom:56.25%;
-	position:relative;
-	height:0;
-}
-
-.map-wrapper iframe {
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	position: absolute;
-}
 
 
 @media all and (max-width:599px){
@@ -428,7 +414,21 @@ nav a:link, a:visited {
   }
 }
 
+.map-wrapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
 
+.map-wrapper iframe {
+  left:5%;
+	top:0;
+	height:90%;
+	width:90%;
+	position: absolute;
+
+}
 
 .me {
   padding:0px;
